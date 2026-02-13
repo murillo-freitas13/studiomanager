@@ -10,6 +10,10 @@ public class RoomList {
         this. scanner = scanner;
     }
 
+    public Room getRoom(int id) {
+        return this.rooms.get(id);
+    }
+
     public ArrayList<Room> getRoomList() {
         return this.rooms;
     }
@@ -33,7 +37,7 @@ public class RoomList {
         int pricePerHour = Integer.parseInt(this.scanner.nextLine());
         int id = this.rooms.size();
 
-        this.rooms.add(new Room(id, type, pricePerHour, roomName));
+        this.rooms.add(new Room(id, type, pricePerHour, roomName, scanner));
 
     }
 

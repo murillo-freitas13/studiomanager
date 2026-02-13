@@ -4,6 +4,7 @@ public class TextUI {
     private Scanner scanner;
     private WorkerUI workerUI;
     private RoomUI roomUI;
+    private SessionManagerUI sessionManagerUI;
     private RoomList roomList;
 
 
@@ -39,7 +40,8 @@ public class TextUI {
         } else if (command == 3) {
 
         } else if (command == 4) {
-
+            this.sessionManagerUI = new SessionManagerUI(this.scanner, this.roomList);
+            this.sessionManagerUI.start();
         } else {
             System.out.println("Invalid command\n");
         }

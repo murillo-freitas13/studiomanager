@@ -16,6 +16,7 @@ public class StudioSession {
         return this.start;
     }
 
+
     public LocalDateTime getFinish() {
         return this.finish;
     }
@@ -25,6 +26,6 @@ public class StudioSession {
     }
 
     public String toString() {
-        return "Start time: " + this.start + "\nFinish time: " + this.finish + "Responsible workers: " + this.responsibleWorkers.toString();
+        return "Start time: " + this.start + "\nFinish time: " + this.finish + "Responsible workers: " + this.responsibleWorkers.toString() + "\n";
     }
 }
